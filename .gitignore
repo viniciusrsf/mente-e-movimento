@@ -1,0 +1,7 @@
+*.py
+*.css
+original_page.html
+dist/
+.vscode/
+.idea/
+*.log

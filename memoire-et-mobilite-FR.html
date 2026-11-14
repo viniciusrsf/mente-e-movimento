@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1F3D2B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Mémoire & Mobilité : +1000 activités pour les personnes âgées, prêtes à l’emploi</title>
+  <meta name="description" content="Le kit d’activités motrices, cognitives et collectives pour les personnes âgées. Plus de 1 395 pages illustrées pas à pas. 5 volumes + 4 bonus. Téléchargement immédiat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --teal:#1F3D2B;
+  --teal2:#1F5E5B;
+  --amber:#E0A030;
+  --cream:#FAF6EF;
+  --ink:#243027;
+  --grey:#5c6b60;
+  --white:#fff;
+  --green:#2E7D6F;
+  --red:#c0492e;
+  --shadow:0 10px 30px rgba(31,61,43,.12);
+}
+
+*, *::before, *::after{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+
+body{
+  font-family:'Segoe UI',system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+  width:100%;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+.wrap{
+  width:100%;
+  max-width:640px;
+  margin:0 auto;
+  padding:0 16px;
+}
+@media(min-width:480px){
+  .wrap{padding:0 20px;}
+}
+
+/* Tipografia Fluida Responsiva */
+h1, h2, h3{
+  font-weight:800;
+  line-height:1.25;
+  letter-spacing:-0.015em;
+}
+h1{
+  font-size:clamp(2.84rem, 10.4vw, 4.4rem);
+  line-height:1.15;
+  letter-spacing:-0.025em;
+  overflow-wrap:break-word;
+}
+h2{font-size:clamp(1.25rem, 4.2vw, 1.65rem);}
+h3{font-size:clamp(1.08rem, 3.4vw, 1.3rem);}
+
+.sec-title{
+  text-align:center;
+  margin-bottom:8px;
+  line-height:1.28;
+}
+.sec-sub{
+  text-align:center;
+  color:var(--grey);
+  margin-bottom:20px;
+  font-size:clamp(0.86rem, 2.7vw, 0.98rem);
+  line-height:1.5;
+}
+
+.amber{color:var(--amber);}
+.teal{color:var(--teal2);}
+.center{text-align:center;}
+
+/* Bottoni CTA Ottimizzati per il Touch Mobile */
+.btn{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:var(--amber);
+  color:var(--teal);
+  font-weight:800;
+  text-decoration:none;
+  text-align:center;
+  padding:16px 18px;
+  border-radius:16px;
+  font-size:clamp(1.02rem, 3.8vw, 1.15rem);
+  box-shadow:0 8px 22px rgba(224,160,48,.35);
+  transition:transform .12s ease, box-shadow .12s ease;
+  border:none;
+  width:100%;
+  cursor:pointer;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+  min-height:52px;
+}
+.btn:active{
+  transform:scale(.98);
+  box-shadow:0 4px 12px rgba(224,160,48,.25);
+}
+.btn small{
+  display:block;
+  font-weight:600;
+  font-size:clamp(0.72rem, 2.3vw, 0.8rem);
+  color:#6b5313;
+  margin-top:4px;
+  line-height:1.35;
+}
+
+.pill{
+  display:inline-block;
+  background:rgba(224,160,48,.18);
+  color:#9a6a10;
+  font-weight:700;
+  padding:5px 14px;
+  border-radius:999px;
+  font-size:clamp(0.75rem, 2.4vw, 0.84rem);
+  letter-spacing:.4px;
+}
+
+/* Barra Superiore Destinatari (Alto Contrasto) */
+.top-bar{
+  background:var(--amber);
+  color:var(--teal);
+  padding:10px 14px;
+  text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.15);
+  border-bottom:1px solid rgba(0,0,0,.08);
+  width:100%;
+}
+.top-bar span{
+  color:var(--teal);
+  font-size:clamp(0.72rem, 2.4vw, 0.84rem);
+  font-weight:800;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+  line-height:1.35;
+  display:block;
+}
+
+/* Sezione Hero Mobile-Optimized */
+.hero{
+  background:linear-gradient(180deg,var(--teal) 0%,var(--teal2) 100%);
+  color:var(--cream);
+  padding:22px 0 28px;
+  text-align:center;
+}
+.hero-social-proof{
+  max-width:min(88vw, 360px);
+  height:auto;
+  margin:4px auto 14px;
+  display:block;
+  filter:drop-shadow(0 4px 12px rgba(0,0,0,.18));
+}
+.hero h1{
+  margin:10px 0 14px;
+}
+.hero .mockup-box{
+  margin:14px auto 18px;
+  max-width:min(92vw, 440px);
+}
+.hero img{
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  width:100%;
+}
+.hero p.sub{
+  margin-bottom:8px;
+  line-height:1.42;
+}
+.hero p.sub-lead{
+  font-weight:700;
+  font-size:clamp(0.96rem, 3.4vw, 1.12rem);
+  color:var(--cream);
+}
+.hero p.sub-detail{
+  font-weight:500;
+  font-size:clamp(0.86rem, 2.8vw, 1.01rem);
+  opacity:.95;
+  margin-bottom:20px;
+}
+
+/* Sezioni & Layout */
+section{padding:30px 0;}
+@media(min-width:641px){
+  section{padding:42px 0;}
+}
+.alt{background:#fff;}
+
+/* Frasi divisorie */
+.phrase{
+  background:var(--amber);
+  color:var(--teal);
+  text-align:center;
+  font-weight:800;
+  font-size:clamp(0.98rem, 3.3vw, 1.15rem);
+  padding:16px 14px;
+  line-height:1.35;
+}
+.phrase.dark{background:var(--teal);color:var(--cream);}
+.phrase.dark b{color:var(--amber);}
+
+/* Sezione 05 — Numeri e Volumi */
+.big-num{
+  background:var(--amber);
+  color:var(--teal);
+  border-radius:18px;
+  padding:16px 14px;
+  text-align:center;
+  margin:18px 0;
+  box-shadow:var(--shadow);
+  font-size:clamp(0.82rem, 2.6vw, 0.94rem);
+  line-height:1.35;
+}
+.big-num b{
+  font-size:clamp(2.1rem, 7vw, 2.7rem);
+  display:block;
+  line-height:1.05;
+  margin-bottom:4px;
+}
+.tomos-img{
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  margin:16px auto 0;
+}
+
+.inc{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:8px;
+}
+@media(max-width:375px){
+  .inc{grid-template-columns:1fr;gap:8px;}
+}
+.inc .card{
+  background:var(--white);
+  border-radius:14px;
+  padding:14px 12px;
+  box-shadow:var(--shadow);
+}
+.inc .n{font-size:1.55rem;font-weight:800;color:var(--amber);line-height:1;}
+.inc .t{font-weight:700;margin-top:4px;font-size:clamp(0.86rem, 2.6vw, 0.95rem);line-height:1.25;}
+.inc .d{color:var(--grey);font-size:clamp(0.78rem, 2.4vw, 0.84rem);margin-top:3px;line-height:1.35;}
+
+/* Sezione 06 — Dettaglio Volumi */
+.tomo{
+  display:flex;
+  gap:12px;
+  background:var(--white);
+  border-radius:16px;
+  padding:14px 12px;
+  box-shadow:var(--shadow);
+  margin-bottom:10px;
+  align-items:flex-start;
+}
+.tomo-cover{
+  flex:0 0 auto;
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  border-radius:10px;
+  background:rgba(31,94,91,.06);
+  padding:2px;
+  border:1px solid rgba(224,160,48,.22);
+  box-shadow:0 3px 8px rgba(31,61,43,.08);
+  margin-top:2px;
+}
+@media(min-width:480px){
+  .tomo-cover{
+    width:52px;
+    height:52px;
+  }
+}
+.tomo .ic{
+  flex:0 0 auto;
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  background:rgba(31,94,91,.1);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.35rem;
+}
+.tomo h3{
+  font-size:clamp(0.95rem, 3vw, 1.05rem);
+  color:var(--teal2);
+  line-height:1.3;
+}
+.tomo .pg{
+  display:inline-block;
+  background:rgba(224,160,48,.18);
+  color:#9a6a10;
+  font-weight:700;
+  font-size:.7rem;
+  padding:2px 8px;
+  border-radius:999px;
+  margin-left:4px;
+  vertical-align:middle;
+}
+.tomo p{
+  color:var(--grey);
+  font-size:clamp(0.82rem, 2.5vw, 0.88rem);
+  margin-top:4px;
+  line-height:1.4;
+}
+
+/* Sezione 07 — Galleria 3D & Lightbox (COMPLETO) */
+.g3sec{
+  background:radial-gradient(120% 80% at 50% 0%,#2a7a6f 0%,#1F5E5B 45%,#1F3D2B 100%);
+  color:#fff;
+  overflow:hidden;
+  position:relative;
+  padding:30px 0 26px;
+}
+.g3sec .g3t{color:#fff;text-align:center;margin:0 0 6px;}
+.g3sec .g3s{
+  color:rgba(255,255,255,.82);
+  text-align:center;
+  margin:0 0 10px;
+  font-size:clamp(0.85rem, 2.7vw, 0.95rem);
+}
+.g3car{
+  position:relative;
+  margin:6px auto 0;
+  --cw:min(74vw, 290px);
+}
+@media(min-width:480px){.g3car{--cw:290px;}}
+.g3car .g3glow{
+  position:absolute;
+  left:50%;
+  top:34%;
+  width:calc(var(--cw)*1.5);
+  height:calc(var(--cw)*1.5);
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(224,160,48,.45) 0%,transparent 70%);
+  filter:blur(10px);
+  pointer-events:none;
+  animation:g3glow 3.2s ease-in-out infinite;
+}
+@keyframes g3glow{
+  0%,100%{opacity:.75;transform:translate(-50%,-50%) scale(.95);}
+  50%{opacity:1;transform:translate(-50%,-50%) scale(1.05);}
+}
+.g3stage{
+  position:relative;
+  perspective:1100px;
+  height:calc(var(--cw)*1.5 + 24px);
+  touch-action:pan-y;
+  user-select:none;
+  -webkit-user-select:none;
+}
+.g3cc{
+  position:absolute;
+  left:50%;
+  top:12px;
+  width:var(--cw);
+  height:calc(var(--cw)*1.5);
+  margin-left:calc(var(--cw)/-2);
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  cursor:pointer;
+  transition:transform .65s cubic-bezier(.2,.85,.25,1),filter .65s,opacity .65s,box-shadow .65s;
+  will-change:transform;
+  box-shadow:0 10px 24px rgba(0,0,0,.35);
+  -webkit-tap-highlight-color:transparent;
+}
+.g3cc img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  pointer-events:none;
+  -webkit-user-drag:none;
+  display:block;
+}
+.g3cc.on{
+  box-shadow:0 0 0 3px rgba(224,160,48,.9),0 22px 50px rgba(0,0,0,.55),0 0 40px rgba(224,160,48,.45);
+}
+.g3cc::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.55) 48%,transparent 62%);
+  transform:translateX(-120%);
+  pointer-events:none;
+}
+.g3cc.on::after{animation:g3shine 1.1s .35s ease-out;}
+@keyframes g3shine{to{transform:translateX(120%);}}
+
+.g3nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin-top:12px;
+}
+.g3arr{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.35);
+  background:rgba(255,255,255,.1);
+  color:#fff;
+  font-size:1.6rem;
+  cursor:pointer;
+  line-height:1;
+  font-family:inherit;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+  transition:background .2s;
+}
+.g3arr:active{background:rgba(224,160,48,.4);}
+.g3dots{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;max-width:70%;}
+.g3dots i{display:block;width:8px;height:8px;border-radius:99px;background:rgba(255,255,255,.3);transition:all .4s;}
+.g3dots i.on{width:24px;background:rgba(224,160,48,.9);}
+.g3num{font-weight:800;font-size:.95rem;color:#fff;min-width:66px;text-align:center;letter-spacing:.5px;}
+.g3num b{color:rgba(224,160,48,.9);}
+.g3hint{
+  text-align:center;
+  font-size:clamp(0.75rem, 2.4vw, 0.82rem);
+  color:rgba(255,255,255,.75);
+  margin-top:10px;
+}
+
+#g3lbx{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  background:rgba(12,26,20,.95);
+  display:none;
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+  padding:60px 10px 24px;
+}
+#g3lbx.on{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#g3lbx img{
+  display:block;
+  max-width:94vw;
+  max-height:86vh;
+  width:auto;
+  height:auto;
+  margin:auto;
+  border-radius:12px;
+  object-fit:contain;
+}
+#g3lbx button{
+  position:fixed;
+  top:14px;
+  right:14px;
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  border:none;
+  background:#fff;
+  color:#1F3D2B;
+  font-size:1.6rem;
+  font-weight:800;
+  line-height:1;
+  cursor:pointer;
+  z-index:2;
+  box-shadow:0 4px 14px rgba(0,0,0,.4);
+  touch-action:manipulation;
+}
+
+/* Sezione 08 — Tutto quello che ricevi */
+.feat{list-style:none;display:grid;gap:10px;}
+.feat li{
+  background:var(--white);
+  border-radius:14px;
+  padding:12px 14px;
+  box-shadow:var(--shadow);
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  font-weight:600;
+  font-size:clamp(0.85rem, 2.7vw, 0.94rem);
+  line-height:1.4;
+}
+.feat .ck{
+  color:var(--green);
+  font-weight:800;
+  font-size:1.15rem;
+  flex:0 0 auto;
+  line-height:1.2;
+}
+
+/* Sezione 09 — A chi è rivolto */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+@media(max-width:375px){
+  .aud{grid-template-columns:1fr;gap:8px;}
+}
+.aud .card{
+  background:var(--white);
+  border-radius:14px;
+  padding:14px 10px;
+  text-align:center;
+  box-shadow:var(--shadow);
+  font-weight:700;
+  font-size:clamp(0.86rem, 2.6vw, 0.94rem);
+}
+.aud .ico{font-size:1.6rem;display:block;margin-bottom:4px;}
+.aud .desc{
+  font-size:clamp(0.74rem, 2.3vw, 0.8rem);
+  font-weight:400;
+  color:var(--grey);
+  margin-top:3px;
+  line-height:1.3;
+}
+.aud .card.full-col{grid-column:1 / -1;}
+
+/* Sezione 11 — I quattro bonus */
+.bonos{
+  background:linear-gradient(180deg,#173124,#1F3D2B);
+  color:var(--cream);
+}
+.bono{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(224,160,48,.3);
+  border-radius:16px;
+  padding:16px 14px;
+  margin-bottom:14px;
+  text-align:center;
+}
+.bono img{
+  border-radius:12px;
+  margin:0 auto 12px;
+  max-width:min(90%, 260px);
+}
+.bono h3{
+  font-size:clamp(1rem, 3.2vw, 1.12rem);
+  margin-bottom:6px;
+  line-height:1.3;
+}
+.bono p{
+  font-size:clamp(0.84rem, 2.6vw, 0.9rem);
+  opacity:.92;
+  line-height:1.4;
+}
+.valor{
+  margin-top:10px;
+  font-weight:700;
+  font-size:clamp(0.84rem, 2.6vw, 0.92rem);
+}
+.valor s{opacity:.6;}
+.gratis{
+  display:inline-block;
+  background:var(--green);
+  color:#fff;
+  font-weight:800;
+  padding:3px 12px;
+  border-radius:999px;
+  margin-left:6px;
+  font-size:clamp(0.75rem, 2.4vw, 0.84rem);
+}
+
+/* Sezione 10 — Obiezioni */
+.obj{display:grid;gap:10px;}
+.obj .card{
+  background:var(--white);
+  border-radius:14px;
+  padding:14px 14px;
+  box-shadow:var(--shadow);
+}
+.obj .q{
+  font-weight:800;
+  color:var(--teal2);
+  margin-bottom:6px;
+  font-size:clamp(0.9rem, 2.8vw, 0.98rem);
+  line-height:1.35;
+}
+.obj .q::before{content:'“';color:var(--amber);}
+.obj .q::after{content:'”';color:var(--amber);}
+.obj .a{
+  color:var(--grey);
+  font-size:clamp(0.84rem, 2.6vw, 0.92rem);
+  line-height:1.45;
+}
+.obj .a::before{content:'👉 ';}
+
+/* Sezione 12 — Offerta / Checkout */
+#comprar{scroll-margin-top:12px;}
+.plan{
+  background:var(--white);
+  border:2px solid #e7ddc9;
+  border-radius:18px;
+  padding:20px 14px;
+  text-align:center;
+  box-shadow:var(--shadow);
+  width:100%;
+  max-width:520px;
+  margin:0 auto;
+}
+.plan.best{border:3px solid var(--amber);position:relative;}
+.plan.best::before{
+  content:attr(data-badge);
+  position:absolute;
+  top:-12px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--amber);
+  color:var(--teal);
+  font-weight:800;
+  font-size:.72rem;
+  padding:3px 14px;
+  border-radius:999px;
+  letter-spacing:.5px;
+  white-space:nowrap;
+}
+.plan h3{
+  font-size:clamp(1.1rem, 3.6vw, 1.25rem);
+  color:var(--teal2);
+  line-height:1.25;
+}
+.plan .old{
+  color:var(--grey);
+  text-decoration:line-through;
+  font-size:clamp(0.88rem, 2.8vw, 0.98rem);
+  margin-top:2px;
+}
+.plan .now{
+  font-size:clamp(4.5rem, 15vw, 5.8rem);
+  font-weight:800;
+  color:var(--teal2);
+  line-height:1;
+  margin:6px 0;
+  letter-spacing:-0.03em;
+}
+.plan .save-tag{
+  color:var(--green);
+  font-weight:700;
+  font-size:clamp(0.88rem, 2.8vw, 0.98rem);
+  margin-bottom:4px;
+}
+.plan .sub-pay{
+  font-size:clamp(0.78rem, 2.4vw, 0.85rem);
+  color:var(--grey);
+  margin-bottom:12px;
+}
+.plan .feats{
+  list-style:none;
+  text-align:left;
+  margin:12px 0 16px;
+  font-size:clamp(0.84rem, 2.6vw, 0.9rem);
+}
+.plan .feats li{
+  padding:6px 0;
+  color:var(--ink);
+  line-height:1.35;
+}
+.plan .feats li::before{
+  content:'✓ ';
+  color:var(--green);
+  font-weight:800;
+}
+
+.plan .feats li.bonus-header{
+  padding-top:8px;
+  padding-bottom:2px;
+  color:var(--teal2);
+  font-weight:700;
+}
+.plan .feats li.bonus-item{
+  padding:3px 0 3px 6px;
+  font-size:clamp(0.81rem, 2.5vw, 0.87rem);
+  color:var(--ink);
+}
+.plan .feats li.bonus-item::before{
+  content:'';
+}
+
+.guarantee{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  background:rgba(46,125,111,.1);
+  border-radius:14px;
+  padding:14px;
+  margin-top:18px;
+  font-size:clamp(0.84rem, 2.5vw, 0.9rem);
+  line-height:1.45;
+  text-align:left;
+}
+@media(max-width:440px){
+  .plan .feats li.bonus-header{
+  padding-top:8px;
+  padding-bottom:2px;
+  color:var(--teal2);
+  font-weight:700;
+}
+.plan .feats li.bonus-item{
+  padding:3px 0 3px 6px;
+  font-size:clamp(0.81rem, 2.5vw, 0.87rem);
+  color:var(--ink);
+}
+.plan .feats li.bonus-item::before{
+  content:'';
+}
+
+.guarantee{flex-direction:column;text-align:center;gap:6px;}
+}
+.guarantee .g{font-size:2rem;flex-shrink:0;}
+
+/* Sezione Testimonianze (Social Proof) */
+.social{
+  background:#fff;
+  border-bottom:1px solid #eee2cf;
+}
+.rtesti{
+  display:grid;
+  gap:12px;
+}
+@media(min-width:641px){
+  .rtesti{grid-template-columns:1fr 1fr;gap:16px;}
+}
+.rt{
+  background:var(--cream);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+}
+.rt .rt-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 14px 0;
+}
+.rt .avatar{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  overflow:hidden;
+  flex-shrink:0;
+  box-shadow:0 3px 8px rgba(31,61,43,.18);
+  border:2px solid var(--amber);
+  background:linear-gradient(135deg,var(--teal2),var(--teal));
+}
+.rt .avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.rt .stars{
+  color:var(--amber);
+  letter-spacing:2px;
+  font-size:.92rem;
+}
+.rt .who{
+  font-weight:800;
+  color:var(--teal2);
+  font-size:clamp(0.86rem, 2.6vw, 0.92rem);
+}
+.rt .role{
+  color:var(--grey);
+  font-size:clamp(0.76rem, 2.3vw, 0.82rem);
+  line-height:1.25;
+}
+.rt .body{
+  padding:10px 14px 14px;
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+}
+.rt .quote-title{
+  font-size:clamp(0.88rem, 2.8vw, 0.95rem);
+  font-weight:800;
+  color:var(--teal2);
+  margin-bottom:4px;
+  line-height:1.3;
+}
+.rt .quote{
+  font-size:clamp(0.82rem, 2.5vw, 0.88rem);
+  font-weight:500;
+  color:var(--ink);
+  line-height:1.45;
+  margin:0 0 8px;
+  flex-grow:1;
+}
+
+/* Sezione Dedicata Garanzia di 30 Giorni */
+.guar-sec{
+  padding:34px 0;
+  background:transparent;
+}
+.guar-card{
+  background:#fff;
+  border-radius:20px;
+  padding:26px 18px;
+  box-shadow:0 6px 24px rgba(31,61,43,.06);
+  border:1px solid #e7ddc9;
+  text-align:center;
+  max-width:520px;
+  margin:0 auto;
+}
+@media(min-width:480px){
+  .guar-card{padding:32px 26px;}
+}
+.guar-seal{
+  width:140px;
+  max-width:min(42vw, 150px);
+  height:auto;
+  margin:0 auto 12px;
+  display:block;
+  filter:drop-shadow(0 6px 14px rgba(31,61,43,.15));
+}
+.guar-title{
+  color:var(--teal);
+  margin-bottom:8px;
+  font-size:clamp(1.18rem, 3.8vw, 1.42rem);
+  line-height:1.28;
+}
+.guar-text{
+  color:var(--grey);
+  font-size:clamp(0.85rem, 2.6vw, 0.92rem);
+  line-height:1.6;
+  margin-bottom:14px;
+  text-align:center;
+}
+.guar-checklist{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px 12px;
+  font-weight:700;
+  color:var(--teal2);
+  font-size:clamp(0.78rem, 2.4vw, 0.84rem);
+  margin-bottom:18px;
+  flex-wrap:wrap;
+  line-height:1.35;
+}
+
+/* Sezione 14 — Domande Frequenti (FAQ) */
+.faq details{
+  background:var(--white);
+  border-radius:12px;
+  padding:4px 14px;
+  margin-bottom:8px;
+  box-shadow:var(--shadow);
+}
+.faq summary{
+  font-weight:700;
+  padding:12px 24px 12px 0;
+  cursor:pointer;
+  list-style:none;
+  position:relative;
+  font-size:clamp(0.88rem, 2.8vw, 0.96rem);
+  line-height:1.35;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{
+  content:'+';
+  position:absolute;
+  right:0;
+  color:var(--amber);
+  font-size:1.3rem;
+  line-height:1;
+}
+.faq details[open] summary::after{content:'–';}
+.faq p{
+  padding:0 0 12px;
+  color:var(--grey);
+  font-size:clamp(0.82rem, 2.5vw, 0.9rem);
+  line-height:1.5;
+}
+
+/* Sezione 15 — Chiusura & Footer */
+.closing-box{
+  background:linear-gradient(180deg,var(--teal) 0%,var(--teal2) 100%);
+  color:var(--cream);
+  border-radius:18px;
+  padding:22px 14px;
+  text-align:center;
+  box-shadow:var(--shadow);
+  margin-top:6px;
+}
+.closing-box h2{
+  color:var(--cream);
+  margin-bottom:8px;
+  font-size:clamp(1.2rem, 4vw, 1.45rem);
+  line-height:1.3;
+}
+.closing-box p{
+  font-size:clamp(0.86rem, 2.7vw, 0.94rem);
+  opacity:.92;
+  margin-bottom:16px;
+  line-height:1.45;
+}
+.closing-box .trust-sub{
+  font-size:clamp(0.74rem, 2.3vw, 0.82rem);
+  opacity:.85;
+  margin-top:10px;
+}
+
+footer{
+  background:var(--teal);
+  color:rgba(250,246,239,.7);
+  text-align:center;
+  padding:22px 14px;
+  font-size:clamp(0.75rem, 2.4vw, 0.82rem);
+}
+footer b{color:var(--amber);}
+footer .disclaimer{
+  margin:10px 0;
+  opacity:.7;
+  font-size:clamp(0.7rem, 2.2vw, 0.76rem);
+  line-height:1.4;
+}
+footer .links{
+  margin-top:12px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px 12px;
+  font-size:clamp(0.74rem, 2.3vw, 0.8rem);
+}
+footer .links a{
+  color:rgba(250,246,239,.8);
+  text-decoration:none;
+}
+footer .links a:hover{color:var(--amber);}
+
+/* Desktop enhancements (>=641px) */
+@media(min-width:641px){
+  h1{font-size:4.8rem; line-height:1.12;}
+  .hero .mockup-box{max-width:520px;}
+  .tomos-img{max-width:520px;}
+  .plan{padding:26px 24px;}
+  .closing-box{padding:28px 24px;}
+}
+  </style>
+</head>
+<body>
+
+<!-- 01 — BANDEAU SUPÉRIEUR (PUBLIC CIBLE) -->
+<!-- 01 — BARRA AUDIENZA TOP -->
+<div class="top-bar">
+  <span>POUR LES AIDES-SOIGNANTS – ANIMATEURS EN EHPAD – KINÉSITHÉRAPEUTES ET ERGOTHÉRAPEUTES QUI ACCOMPAGNENT LES PERSONNES ÂGÉES</span>
+</div>
+
+<!-- 02 — SECTION PRINCIPALE (HERO) -->
+<header class="hero">
+  <div class="wrap">
+    <h1>Mémoire & Mobilité :<br><span class="amber">+1000 activités pour les personnes âgées, prêtes à l’emploi</span></h1>
+    
+    <!-- MOCKUP PRINCIPAL -->
+    <div class="mockup-box">
+      <img src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787977659934_mockup-final.webp" alt="Collection complète Mémoire & Mobilité" width="900" height="900" style="border-radius:18px;box-shadow:var(--shadow);width:100%">
+    </div>
+
+    <!-- SOUS-TITRES SOUS LE MOCKUP -->
+    <p class="sub sub-lead">Des activités physiques, cognitives et collectives, illustrées et organisées en 5 volumes + 4 bonus.</p>
+    <p class="sub sub-detail">Préparez vos séances en quelques minutes, sans passer des heures à chercher des idées et à créer vos supports.</p>
+
+    <!-- CTA & TRUST -->
+    <a class="btn" href="#comprar">JE CHOISIS LE KIT COMPLET <small>Accès immédiat · PDF à télécharger et à imprimer · Garantie de remboursement de 30 jours</small></a>
+
+  </div>
+</header>
+
+<!-- 05 — POURQUOI CHOISIR MÉMOIRE & MOBILITÉ -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="sec-title">Une nouvelle activité à préparer…<br>et encore du temps à chercher des idées ?</h2>
+    <p class="sec-sub">Vous avez déjà proposé les mêmes jeux plusieurs fois ? Vos fiches sont éparpillées entre dossiers, sites et notes ? Vous aimeriez consacrer moins de temps à la préparation et avoir davantage de choix ? Mémoire & Mobilité réunit des activités motrices, cognitives et collectives dans cinq volumes : une base organisée à retrouver chaque fois que vous préparez une séance.</p>
+    
+    <div class="big-num">
+      <b>Plus de 1 395</b>
+      pages illustrées · classées par niveau et objectif · prêtes à imprimer ou à consulter sur écran
+    </div>
+    
+    <div class="inc">
+      <div class="card">
+        <div class="n">5</div>
+        <div class="t">Volumes complémentaires</div>
+        <div class="d">Activités motrices, équilibre, étirements, activités collectives et stimulation cognitive.</div>
+      </div>
+      <div class="card">
+        <div class="n">4</div>
+        <div class="t">Bonus inclus</div>
+        <div class="d">Supports consacrés à la mobilité réduite, à la reprise du mouvement, à l’évaluation et à la préparation.</div>
+      </div>
+      <div class="card">
+        <div class="n">91</div>
+        <div class="t">Fiches cognitives à imprimer</div>
+        <div class="d">Mots mêlés, labyrinthes et séquences à remettre dans l’ordre pour vos bénéficiaires.</div>
+      </div>
+      <div class="card">
+        <div class="n">+170</div>
+        <div class="t">Exercices dans les bonus</div>
+        <div class="d">Propositions pour la mobilité réduite et la reprise du mouvement après une chute.</div>
+      </div>
+    </div>
+    <p class="center" style="font-size:.85rem;color:var(--grey);margin-top:18px">Pour vos séances individuelles et vos ateliers collectifs, en cabinet, en EHPAD, en accueil de jour ou à domicile.</p>
+  </div>
+</section>
+
+<!-- 06 — LES CINQ VOLUMES -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">Les cinq volumes en détail</h2>
+    <p class="sec-sub">Cinq volumes pour renouveler vos séances et vos ateliers. Chaque page est une fiche prête à imprimer et à utiliser.</p>
+    
+    <div class="tomo">
+      <div class="ic">📘</div>
+      <div>
+        <h3>VOLUME 1 · Fiches d’exercices illustrées pas à pas <span class="pg">325 pages</span></h3>
+        <p>Besoin d’un exercice pour votre prochaine séance ? Partez d’une fiche déjà prête. Des propositions illustrées pas à pas, avec ou sans matériel, à sélectionner selon votre objectif. Moins de supports à fabriquer, plus de temps pour adapter votre accompagnement.</p>
+      </div>
+    </div>
+    
+    <div class="tomo">
+      <div class="ic">📗</div>
+      <div>
+        <h3>VOLUME 2 · Activités motrices pour les personnes âgées <span class="pg">371 pages</span></h3>
+        <p>Renouvelez vos séances de gym douce et vos activités motrices : équilibre, marche, mobilité et coordination. Un répertoire pour choisir vos propositions selon les capacités de la personne, varier les exercices et <b>prévenir les chutes</b>.</p>
+      </div>
+    </div>
+    
+    <div class="tomo">
+      <div class="ic">📙</div>
+      <div>
+        <h3>VOLUME 3 · Étirements et relaxation <span class="pg">126 pages</span></h3>
+        <p>Comment commencer ou terminer votre séance ? Retrouvez des propositions d’étirements, de mobilité articulaire, de respiration et de relaxation. Une base pour intégrer un temps plus calme, en respectant le rythme de chacun.</p>
+      </div>
+    </div>
+    
+    <div class="tomo">
+      <div class="ic">📕</div>
+      <div>
+        <h3>VOLUME 4 · Jeux et activités collectives <span class="pg">100 pages</span></h3>
+        <p>Apportez de nouvelles idées à vos ateliers : jeux, musique, évocation des souvenirs et activités partagées. Des supports pour susciter les échanges et varier les rencontres en EHPAD, en résidence autonomie ou en accueil de jour, sans tout inventer à chaque fois.</p>
+      </div>
+    </div>
+    
+    <div class="tomo">
+      <div class="ic">📓</div>
+      <div>
+        <h3>VOLUME 5 · Activités de stimulation cognitive <span class="pg">293 pages</span></h3>
+        <p>Préparez vos ateliers mémoire et vos activités de stimulation cognitive avec des supports consacrés à la mémoire, à l’attention, au langage et aux fonctions exécutives. Vous disposez de <b>91 fiches à imprimer</b> : mots mêlés, labyrinthes et séquences à distribuer directement.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PHRASE DE TRANSITION -->
+<div class="phrase">Mouvement, stimulation cognitive et lien social : <span class="teal">une collection pour varier vos séances.</span></div>
+
+<!-- 07 — APERÇU DES SUPPORTS (GALERIE 3D) -->
+<section class="g3sec">
+  <div class="wrap">
+    <h2 class="sec-title g3t">Découvrez les fiches avant de choisir votre kit</h2>
+    <p class="sec-sub g3s">Parcourez les exemples pour voir comment les activités sont présentées : illustrations claires, consignes pas à pas et propositions à sélectionner selon votre objectif.</p>
+    
+    <div class="g3car">
+      <div class="g3glow"></div>
+      <div class="g3stage">
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958920486_galeria-01.webp" alt="Exercice sans matériel"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958921853_galeria-02.webp" alt="Exercice avec matériel"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958923205_galeria-03.webp" alt="Mouvement fonctionnel"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958924620_galeria-04.webp" alt="Équilibre"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958925993_galeria-05.webp" alt="Motricité fine"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958927268_galeria-06.webp" alt="Mobilité"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958928683_galeria-07.webp" alt="Étirements"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958930438_galeria-08.webp" alt="Respiration et relaxation"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958931945_galeria-09.webp" alt="Activité collective"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958933236_galeria-10.webp" alt="Activité musicale"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958934515_galeria-11.webp" alt="Proposition pour mobilité réduite"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958935944_galeria-12.webp" alt="Exercice de reprise du mouvement"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958937352_galeria-13.webp" alt="Mots mêlés"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958938376_galeria-14.webp" alt="Labyrinthe"></div>
+        <div class="g3cc"><img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787958939318_galeria-15.webp" alt="Séquence à remettre dans l’ordre"></div>
+      </div>
+      <div class="g3nav">
+        <button type="button" class="g3arr" data-d="-1" aria-label="Précédent">‹</button>
+        <div class="g3dots"></div>
+        <button type="button" class="g3arr" data-d="1" aria-label="Suivant">›</button>
+      </div>
+      <p class="g3hint">👆 Faites défiler les exemples · appuyez sur une fiche pour l’agrandir</p>
+    </div>
+  </div>
+</section>
+
+<!-- PHRASE DE TRANSITION DARK -->
+<div class="phrase dark">Le matériel professionnel qui met en valeur la <b>qualité de votre accompagnement.</b></div>
+
+<!-- 09 — POUR QUI ? -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="sec-title">Pour qui ?</h2>
+    <p class="sec-sub">Pour celles et ceux qui accompagnent les personnes âgées au quotidien.</p>
+    <div class="aud">
+      <div class="card">
+        <span class="ico">🩺</span>
+        <b>Kinésithérapeutes</b>
+        <span class="desc">Pour compléter leur préparation avec des propositions motrices sélectionnées selon l’évaluation individuelle.</span>
+      </div>
+      <div class="card">
+        <span class="ico">🧑‍⚕️</span>
+        <b>Ergothérapeutes</b>
+        <span class="desc">Pour varier les activités autour des capacités du quotidien, de la participation et de la stimulation cognitive.</span>
+      </div>
+      <div class="card">
+        <span class="ico">🏃</span>
+        <b>Enseignants APA</b>
+        <span class="desc">Pour organiser des propositions d'activité physique adaptée aux capacités du groupe.</span>
+      </div>
+      <div class="card">
+        <span class="ico">🎨</span>
+        <b>Animateurs en EHPAD</b>
+        <span class="desc">Pour préparer des ateliers, des jeux et des temps d’échange en résidence autonomie ou accueil de jour.</span>
+      </div>
+      <div class="card full-col">
+        <span class="ico">🤝</span>
+        <b>Aides-soignants et aidants familiaux</b>
+        <span class="desc">Pour trouver des idées d’activités du quotidien, dans le respect de leur rôle et des recommandations des professionnels référents.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 — LES QUATRE BONUS -->
+<section class="bonos">
+  <div class="wrap">
+    <p class="center"><span class="pill">BONUS EXCLUSIFS</span></p>
+    <h2 class="sec-title" style="color:#fff">Plus que des exercices : 4 bonus pour vous aider à organiser vos séances</h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,.8)">Des outils pratiques offerts gratuitement aujourd'hui avec votre kit complet.</p>
+    
+    <div class="bono">
+      <img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787663348402_bono1.webp" alt="Bonus 1 Mobilité réduite">
+      <h3>BONUS 1 · Plus de 100 exercices pour la mobilité réduite</h3>
+      <p>Des propositions pour les personnes présentant des limitations motrices ou utilisant un fauteuil roulant. Un support pour rechercher des modalités de participation adaptées aux capacités de chacun.</p>
+      <div class="valor"><s>Valeur commerciale : 25 €</s> <span class="gratis">OFFERT AUJOURD'HUI</span></div>
+    </div>
+
+    <div class="bono">
+      <img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787663349475_bono2.webp" alt="Bonus 2 Reprise du mouvement et après une chute">
+      <h3>BONUS 2 · Plus de 60 exercices de reprise du mouvement et après une chute</h3>
+      <p>Des supports pour accompagner le travail moteur après une période d’inactivité, une chute ou une intervention. À utiliser dans le cadre d’un parcours individuel défini par un professionnel qualifié.</p>
+      <div class="valor"><s>Valeur commerciale : 25 €</s> <span class="gratis">OFFERT AUJOURD'HUI</span></div>
+    </div>
+
+    <div class="bono">
+      <img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787663350307_bono3.webp" alt="Bonus 3 Guide d’évaluation des capacités motrices">
+      <h3>BONUS 3 · Guide d’évaluation des capacités motrices</h3>
+      <p>Des échelles et des tests pour soutenir l’observation initiale et le suivi dans le temps. Destiné aux professionnels compétents pour utiliser et interpréter les outils proposés.</p>
+      <div class="valor"><s>Valeur commerciale : 20 €</s> <span class="gratis">OFFERT AUJOURD'HUI</span></div>
+    </div>
+
+    <div class="bono">
+      <img loading="lazy" decoding="async" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/901b1f32-05da-431f-a3d5-0946f0897d8a/1787663351106_bono4.webp" alt="Bonus 4 Trames de préparation des séances">
+      <h3>BONUS 4 · Trames de préparation des séances</h3>
+      <p>Vos fiches sont choisies : place à la préparation. Des trames pour organiser vos objectifs et vos activités, construire vos séances et réutiliser une structure sans la réécrire à chaque fois.</p>
+      <div class="valor"><s>Valeur commerciale : 20 €</s> <span class="gratis">OFFERT AUJOURD'HUI</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 10 — RÉPONSES AUX HÉSITATIONS (OBJECTIONS) -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">Vous vous demandez si ce kit vous convient ?</h2>
+    <p class="sec-sub">Voici les réponses aux interrogations les plus fréquentes.</p>
+    <div class="obj">
+      <div class="card">
+        <div class="q">Je manque de temps pour préparer mes séances.</div>
+        <div class="a">La collection est organisée pour vous aider à trouver une base de travail en quelques instants, sans repartir d’une page blanche.</div>
+      </div>
+      <div class="card">
+        <div class="q">J’accompagne des personnes à mobilité réduite.</div>
+        <div class="a">Un bonus complet comprend plus de 100 exercices consacrés à la mobilité réduite et aux personnes utilisant un fauteuil roulant. Les activités restent à choisir selon la situation individuelle.</div>
+      </div>
+      <div class="card">
+        <div class="q">J’ai déjà d’autres supports.</div>
+        <div class="a">Mémoire & Mobilité peut compléter votre répertoire en réunissant des propositions motrices, cognitives et collectives dans une collection claire et organisée.</div>
+      </div>
+      <div class="card">
+        <div class="q">Je ne suis pas un professionnel de la rééducation.</div>
+        <div class="a">Vous pouvez sélectionner les activités de loisirs et de lien social compatibles avec votre rôle. Les propositions de rééducation nécessitent des compétences professionnelles adaptées.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHRASE DE TRANSITION -->
+<div class="phrase">Pensez au temps consacré chaque semaine à chercher des supports : <span class="teal">vous disposez ici d’une collection organisée séance après séance.</span></div>
+
+<!-- 12 — OFFRE / PRIX -->
+<section id="comprar">
+  <div class="wrap">
+    <div class="plan best" data-badge="OFFRE COMPLÈTE" style="max-width:520px;margin:0 auto">
+      <h3 style="margin-bottom:14px">Collection complète Mémoire & Mobilité</h3>
+      <ul class="feats">
+        <li><b>5 volumes complets</b> (+1 395 pages illustrées au format A4)</li>
+        <li><b>91 fiches cognitives</b> prêtes à imprimer</li>
+        <li class="bonus-header"><b>4 Bonus exclusifs offerts :</b></li>
+        <li class="bonus-item">🎁 <b>Mobilité Réduite :</b> plus de 100 exercices sur chaise et adaptés</li>
+        <li class="bonus-item">🎁 <b>Reprise du Mouvement :</b> plus de 60 activités post-chute et réactivation</li>
+        <li class="bonus-item">🎁 <b>Guide d'Évaluation :</b> fiches d'observation des capacités motrices</li>
+        <li class="bonus-item">🎁 <b>Modèles de Séances :</b> trames prêtes pour structurer chaque atelier</li>
+        <li><b>Accès immédiat et pour toujours</b> (téléchargez et conservez vos fichiers à vie)</li>
+        <li><b>Toutes les mises à jour incluses</b> sans aucun surcoût</li>
+        <li><b>Garantie commerciale de remboursement de 30 jours</b></li>
+      </ul>
+
+      <div style="margin:18px 0 16px">
+        <p class="old">Prix de référence : <s>87 €</s></p>
+        <div class="now">27 €</div>
+        <p style="color:var(--green);font-weight:700;margin-bottom:4px">Vous économisez 60 € (Remise de 69%)</p>
+        <p style="font-size:.85rem;color:var(--grey);margin-bottom:0">Paiement unique · Sans abonnement · Accès à vie</p>
+      </div>
+
+      <a class="btn" href="#comprar">OBTENIR LE KIT COMPLET <small>Accédez aux PDF immédiatement après confirmation de commande</small></a>
+      <p style="color:var(--grey);font-size:.82rem;margin-top:12px">Il suffit d'utiliser <b>une seule fiche avec une seule personne</b> pour avoir rentabilisé votre achat.</p>
+    </div>
+
+
+
+  </div>
+</section>
+
+<!-- 03 — TÉMOIGNAGES (EXEMPLES DE L'ANNEXE) -->
+<section class="social">
+  <div class="wrap">
+    <p class="center"><span class="pill">RETOURS D'EXPÉRIENCE DU TERRAIN</span></p>
+    <h2 class="sec-title">Ce qu’en disent les professionnels et accompagnants</h2>
+    <p class="sec-sub">Les retours concrets de personnes qui accompagnent des aînés au quotidien en EHPAD, accueil de jour et à domicile.</p>
+    <div class="rtesti">
+      
+      <!-- Témoignage 1: Nathalie Dubois -->
+      <div class="rt">
+        <div class="rt-head">
+          <div class="avatar"><img src="mockups/avatar-laura.webp" alt="Nathalie Dubois" width="46" height="46" loading="lazy"></div>
+          <div>
+            <div class="who">Nathalie Dubois</div>
+            <div class="role">Aide-soignante · EHPAD 🇫🇷</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="stars">★★★★★</div>
+          <div class="quote-title">“Un outil indispensable dans mon quotidien en EHPAD !”</div>
+          <p class="quote">“En tant qu’aide-soignante assurant des ateliers mémoire, je devais souvent improviser. Avec Mémoire & Mobilité, j’ai toujours sous la main des fiches imprimables claires et adaptables. Les résidents adorent !”</p>
+        </div>
+      </div>
+
+      <!-- Témoignage 2: Stéphane Mercier -->
+      <div class="rt">
+        <div class="rt-head">
+          <div class="avatar"><img src="mockups/avatar-marco.webp" alt="Stéphane Mercier" width="46" height="46" loading="lazy"></div>
+          <div>
+            <div class="who">Stéphane Mercier</div>
+            <div class="role">Animateur en gérontologie 🇫🇷</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="stars">★★★★★</div>
+          <div class="quote-title">“Enfin du matériel sérieux et non infantilisant.”</div>
+          <p class="quote">“Trouver des fiches qui respectent la dignité des personnes âgées est un défi. Ce kit est exceptionnel : stimulant, adapté et parfaitement calibré sur leurs capacités cognitives.”</p>
+        </div>
+      </div>
+
+      <!-- Témoignage 3: Claire Bernard -->
+      <div class="rt">
+        <div class="rt-head">
+          <div class="avatar"><img src="mockups/avatar-elena.webp" alt="Claire Bernard" width="46" height="46" loading="lazy"></div>
+          <div>
+            <div class="who">Claire Bernard</div>
+            <div class="role">Psychologue en gérontologie 🇫🇷</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="stars">★★★★★</div>
+          <div class="quote-title">“Un investissement dérisoire par rapport au temps gagné.”</div>
+          <p class="quote">“En service, le temps manque toujours. Avoir une banque de 300+ fiches classées par domaine cognitif m’a sauvé la vie. Je le recommande les yeux fermés !”</p>
+        </div>
+      </div>
+
+      <!-- Témoignage 4: Jean-Marc Laurent -->
+      <div class="rt">
+        <div class="rt-head">
+          <div class="avatar"><img src="mockups/avatar-giuseppe.webp" alt="Jean-Marc Laurent" width="46" height="46" loading="lazy"></div>
+          <div>
+            <div class="who">Jean-Marc Laurent</div>
+            <div class="role">Aidant familial 🇫🇷</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="stars">★★★★★</div>
+          <div class="quote-title">“Acheté pour mon père atteint de troubles légers.”</div>
+          <p class="quote">“Très facile à imprimer. Nous faisons 2 fiches chaque après-midi : un moment de partage précieux qui lui permet de rester actif.”</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIE DE 30 JOURS -->
+<!-- 13 — GARANTIE DÉDIÉE (30 JOURS) -->
+<section class="guar-sec">
+  <div class="wrap">
+    <div class="guar-card">
+      <img src="mockups/Selo_Garantie_30_Jours_FR.webp" alt="Garantie 30 Jours - Mémoire & Mobilité" class="guar-seal" width="140" height="140" loading="lazy">
+      <h2 class="sec-title guar-title">Garantie de Remboursement de 30 Jours</h2>
+      <p class="guar-text">
+        Vous disposez de <b>30 jours complets</b> pour télécharger la collection, découvrir les fiches et les tester lors de vos ateliers avec les personnes âgées. Si pour une raison quelconque le kit ne répond pas à vos attentes, un simple e-mail suffit pour obtenir un <b>remboursement intégral de 100 %</b>, sans questions ni formalités.
+      </p>
+      <div class="guar-checklist">
+        <span>✓ 30 jours d'essai</span> · <span>✓ Zéro risque</span> · <span>✓ Remboursement à 100%</span>
+      </div>
+      <a class="btn" href="#comprar">TESTER LE KIT PENDANT 30 JOURS SANS RISQUE</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- 14 — QUESTIONS FRÉQUENTES (FAQ) -->
+<section class="faq">
+  <div class="wrap">
+    <h2 class="sec-title">Questions fréquentes</h2>
+    <p class="sec-sub">Vous avez encore des questions ? Retrouvez toutes les réponses ici.</p>
+    
+    <details>
+      <summary>Comment vais-je recevoir les supports ?</summary>
+      <p>Après le paiement, vous recevez un accès immédiat aux fichiers PDF par e-mail. Aucun livre imprimé n'est envoyé par courrier : il s'agit d'un produit 100 % numérique que vous pouvez télécharger, imprimer et conserver pour toujours sur l'ensemble de vos appareils.</p>
+    </details>
+
+    <details>
+      <summary>Dois-je imprimer toute la collection ?</summary>
+      <p>Non. Vous pouvez imprimer facilement uniquement les fiches dont vous avez besoin pour votre séance du jour, ou bien les consulter directement sur l'écran de votre tablette ou ordinateur.</p>
+    </details>
+
+    <details>
+      <summary>Faut-il être un spécialiste pour utiliser le kit ?</summary>
+      <p>Cela dépend des activités. Les propositions récréatives et de lien social sont parfaitement accessibles aux animateurs en EHPAD, aides-soignants et aidants familiaux. Les activités de rééducation ciblée nécessitent quant à elles les compétences d'un professionnel de santé habilité.</p>
+    </details>
+
+    <details>
+      <summary>Y a-t-il des activités pour les personnes à mobilité réduite ?</summary>
+      <p>Oui. Un bonus spécial comprend plus de 100 exercices consacrés à la mobilité réduite et aux personnes en fauteuil roulant ou assises, pensés pour n'exclure aucun bénéficiaire.</p>
+    </details>
+
+    <details>
+      <summary>Le kit remplace-t-il un accompagnement thérapeutique ?</summary>
+      <p>Non. Il s'agit d'un excellent matériel de soutien pratique, mais il ne remplace en aucun cas l'évaluation, les prescriptions ou le traitement médical d'un médecin ou d'un professionnel de santé.</p>
+    </details>
+
+    <details>
+      <summary>Et si le kit ne correspond pas à mes attentes ?</summary>
+      <p>Aucun problème. Vous bénéficiez de notre garantie commerciale de 30 jours : vous pouvez demander le remboursement intégral de votre achat en toute simplicité et sans avoir à vous justifier.</p>
+    </details>
+
+  </div>
+</section>
+
+<!-- 15 — DERNIER APPEL À L'ACTION -->
+<section style="padding:20px 0 40px">
+  <div class="wrap">
+    <div class="closing-box">
+      <h2 style="margin-bottom:18px">Pour votre prochain atelier, commencez avec des idées à portée de main</h2>
+      <a class="btn" href="#comprar">JE VEUX LES 5 VOLUMES + LES 4 BONUS</a>
+    </div>
+  </div>
+</section>
+
+<!-- 16 — PIED DE PAGE -->
+<footer>
+  <div class="wrap">
+    <b>Mémoire & Mobilité</b> · Activités motrices, cognitives et collectives pour les personnes âgées.<br>
+    <div class="disclaimer">
+      Supports complémentaires pour les professionnels, les accompagnants et les aidants. Ne remplacent pas le jugement clinique ni une évaluation individuelle. Les activités doivent être sélectionnées et adaptées selon la situation de la personne et les compétences de l’intervenant.
+    </div>
+    <div style="opacity:.65">© 2026 Mémoire & Mobilité. Tous droits réservés.</div>
+    <div class="links">
+      <a href="#comprar">Contact</a> · 
+      <a href="#comprar">Politique de confidentialité</a> · 
+      <a href="#comprar">Conditions générales de vente</a> · 
+      <a href="#comprar">Politique de remboursement</a>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX IMAGES -->
+<div id="g3lbx"><button type="button" aria-label="Fermer">&times;</button><img alt=""></div>
+
+<script>
+(function(){
+  // Compte à rebours 15 minutes
+  var end = Date.now() + 15 * 60 * 1000, el = document.getElementById("clock");
+  function t(){
+    var s = Math.max(0, Math.floor((end - Date.now()) / 1000));
+    var m = String(Math.floor(s / 60)).padStart(2, "0"), ss = String(s % 60).padStart(2, "0");
+    if(el) el.textContent = m + ":" + ss;
+    if(s > 0) setTimeout(t, 1000);
+  }
+  t();
+
+  // Date dynamique aujourd'hui au format français
+  var pd = document.getElementById("promoDate");
+  if(pd){
+    try{
+      pd.textContent = new Date().toLocaleDateString("fr-FR", {day: "2-digit", month: "2-digit"});
+    }catch(e){}
+  }
+
+  // Défilement fluide vers la section commande
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+    anchor.addEventListener("click", function(e){
+      var targetId = this.getAttribute("href").substring(1);
+      var target = document.getElementById(targetId);
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior: "smooth"});
+      }
+    });
+  });
+})();
+
+// Carrousel 3D et Visionneuse plein écran
+(function(){
+  var lb = document.getElementById("g3lbx"), lbi = lb.querySelector("img"), lockd = false, prevH = "", prevB = "", opened = 0;
+  function openLb(src){
+    lbi.src = src;
+    lb.classList.add("on");
+    lb.scrollTop = 0;
+    opened = Date.now();
+    if(!lockd){
+      prevH = document.documentElement.style.overflow;
+      prevB = document.body.style.overflow;
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+      lockd = true;
+    }
+  }
+  function closeLb(){
+    lb.classList.remove("on");
+    if(lockd){
+      document.documentElement.style.overflow = prevH;
+      document.body.style.overflow = prevB;
+      lockd = false;
+    }
+  }
+  lb.addEventListener("click", function(e){
+    if(Date.now() - opened < 350) return;
+    if(e.target !== lbi) closeLb();
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" || e.keyCode === 27) closeLb();
+  });
+
+  document.querySelectorAll(".g3car").forEach(function(car){
+    var st = car.querySelector(".g3stage"), cs = [].slice.call(st.querySelectorAll(".g3cc")), n = cs.length, i = 0,
+        dots = car.querySelector(".g3dots"), vis = false, hold = 0;
+    var muchos = n > 10, num = null;
+    if(muchos){
+      num = document.createElement("span");
+      num.className = "g3num";
+      dots.parentNode.replaceChild(num, dots);
+    } else {
+      cs.forEach(function(){ dots.appendChild(document.createElement("i")); });
+    }
+    var ds = muchos ? [] : [].slice.call(dots.children);
+
+    function r(){
+      cs.forEach(function(c, k){
+        var d = k - i;
+        if(d > n/2) d -= n;
+        if(d < -n/2) d += n;
+        var a = Math.abs(d);
+        c.style.transform = "translateX(" + (d * 56) + "%) scale(" + (a === 0 ? 1 : a === 1 ? .8 : .64) + ") rotateY(" + (d === 0 ? 0 : (d < 0 ? 22 : -22)) + "deg)";
+        c.style.zIndex = 10 - a;
+        c.style.opacity = a > 2 ? 0 : 1;
+        c.style.pointerEvents = a > 1 ? "none" : "auto";
+        c.style.filter = a === 0 ? "none" : "brightness(" + (a === 1 ? .42 : .28) + ") blur(" + (a === 1 ? 1.6 : 3) + "px) saturate(.8)";
+        c.classList.toggle("on", a === 0);
+      });
+      if(muchos){
+        num.innerHTML = "<b>" + (i + 1) + "</b> / " + n;
+      } else {
+        ds.forEach(function(x, k){ x.classList.toggle("on", k === i); });
+      }
+    }
+
+    function go(k){ i = (k + n) % n; r(); }
+    function user(){ hold = Date.now(); }
+
+    car.querySelectorAll(".g3arr").forEach(function(b){
+      b.addEventListener("click", function(){ user(); go(i + (+b.getAttribute("data-d"))); });
+    });
+
+    var x0 = null, moved = false;
+    st.addEventListener("pointerdown", function(e){ x0 = e.clientX; moved = false; });
+    st.addEventListener("pointermove", function(e){ if(x0 !== null && Math.abs(e.clientX - x0) > 10) moved = true; });
+    st.addEventListener("pointerup", function(e){
+      if(x0 === null) return;
+      var dx = e.clientX - x0;
+      x0 = null;
+      user();
+      if(Math.abs(dx) > 40){ go(i + (dx < 0 ? 1 : -1)); return; }
+      if(moved) return;
+      var c = e.target.closest(".g3cc");
+      if(!c) return;
+      var k = cs.indexOf(c);
+      if(k === i){ openLb(c.querySelector("img").src); } else { go(k); }
+    });
+    st.addEventListener("pointercancel", function(){ x0 = null; });
+
+    if("IntersectionObserver" in window){
+      new IntersectionObserver(function(es){
+        vis = es[0].isIntersecting;
+        if(vis) cs.forEach(function(c){ c.querySelector("img").loading = "eager"; });
+      }, {rootMargin: "300px"}).observe(car);
+    } else {
+      vis = true;
+    }
+
+    setInterval(function(){
+      if(vis && !lb.classList.contains("on") && Date.now() - hold > 7000) go(i + 1);
+    }, 3200);
+
+    r();
+  });
+})();
+</script>
+</body>
+</html>
